@@ -26,21 +26,31 @@ movieTimesFunction = function(billAndTed){
   var times = [];
   times = billAndTed.movieTime;
 
-  for (var i = 0; i < billAndTed.movieTime.length; i++){
-    alert(times[i]);
-    // times[i] = billAndTed.movieTimes[i];
-    if (times[i] === times[1]){
-      $("#billtedtime1").text(times[1]);
-    } else if (times[i] === times[2]){
-      $("#billtedtime2").text(times[2]);
-    } else if (times[i] === times[3]){
-      $("#billtedtime3").text(times[3]);
-    };
+};
+
+function getMoviePrice() {
+  for (var i = 0, l = movieTime.length; i < l; i++)
+    {
+      return movieTime[i].value;
+    }
+}
+
+  // for (var i = 0; i < billAndTed.movieTime.length; i++){
+  //   alert(times[i]);
+  //   $("radio#billtedtime1").append(i[1]);
+  //
+  //   // if (times[i] === times[1]){
+  //   //   $("#billtedtime1").text(times[1]);
+  //   // } else if (times[i] === times[2]){
+  //   //   $("#billtedtime2").text(times[2]);
+  //   // } else if (times[i] === times[3]){
+  //   //   $("#billtedtime3").text(times[3]);
+  //   // };
 
     //RADIO BUTTON VALUE
-  };
-  return times;
-};
+  // };
+  // return times;
+// };
 
 
 
@@ -51,6 +61,14 @@ $(document).ready(function(){
     event.preventDefault();
     $("#billTedTimesShow").show();
     var billMovieTimes = movieTimesFunction(billAndTed);
+    alert("TIMES FRONT-END" + billMovieTimes);
+    // for (var i = 0; i < billMovieTimes; i++)
+    // {
+    //
+    // }
+
+
+
   });
 
 // for (var i = 0; i < price.length; i++)
