@@ -1,6 +1,6 @@
 function Movies(title, time, description){
   this.movieTitle = title;
-  this.movieTime = time;
+  this.movieTime = [];
   this.movieDescription = description;
 }
 
@@ -12,7 +12,7 @@ var billAndTed = {
 
 var xxxVin = {
   movieTitle : "XXX-NOT porn",
-  movieTime : ["3:00", "2:30", "5:00"],
+  movieTime : ["2:30", "3:00", "5:00"],
   movieDescription: "definitely not porn"
 };
 
@@ -22,9 +22,40 @@ var hiddenFigures = {
   movieDescription : "No idea, some movie"
 };
 
+movieTimesFunction = function(billAndTed){
+  var times = [];
+  times = billAndTed.movieTime;
+  // alert(times[i]);
+  for (var i = 0; i < billAndTed.movieTime.length; i++){
+    alert(times[i]);
+    // times[i] = billAndTed.movieTimes[i];
+    if (times[i] === times[1]){
+      $("#billtedtime1").text(times[1]);
+    } else if (times[i] === times[2]){
+      $("#billtedtime2").text(times[2]);
+    } else if (times[i] === times[3]){
+      $("#billtedtime3").text(times[3]);
+    };
+
+    //RADIO BUTTON VALUE
+  };
+  return times;
+};
+
+
+
 $(document).ready(function(){
+  var price = $("input:radio:checked");
+
   $("button#billTed").click(function(event) {
     event.preventDefault();
     $("#billTedTimesShow").show();
+    var billMovieTimes = movieTimesFunction(billAndTed);
   });
+
+// for (var i = 0; i < price.length; i++)
 });
+
+
+//
+// $("radio buttons html value").ourPrototype that loops through the times section of the object and returns our three times values(input our bill and teds object);
