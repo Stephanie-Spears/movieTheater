@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Movie Tickets</h1>
+      </div>
+
+      <div class="movieSelector">
+        <button class="btn" id="billTed" type="button" name="button">Bill and Ted's Excellent Adventure</button>
+      </div>
+
+
+      <div class="movieTimes" id="billTedTimesShow">
+        <form id="billTedTimes">
+          <input type="radio" name="movieName1" value="billtedtime1"><br>
+          <input type="radio" name="movieName2" value="billtedtime2"><br>
+          <input type="radio" name="movieName3" value="billtedtime3"><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      <div class="moviePrices">
+        <p>
+          <span id="billTedPrice"></span>
+        </p>
+      </div>
+
+
+    </div>
+  </body>
+</html>
