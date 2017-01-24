@@ -40,16 +40,23 @@ movieTimesFunction = function(billAndTed){
 };
 
 $(document).ready(function(){
-  // var price = $("input:radio:checked");
-
   $("button#billTed").click(function(event) {
     event.preventDefault();
     $("#billTedTimesShow").show();
-    // var billMovieTimes = movieTimesFunction(billAndTed);
   });
-
-// for (var i = 0; i < price.length; i++)
 });
+
+// $(document).ready(function(){
+//   // var price = $("input:radio:checked");
+//
+//   $("button#billTed").click(function(event) {
+//     event.preventDefault();
+//     $("#billTedTimesShow").show();
+//     // var billMovieTimes = movieTimesFunction(billAndTed);
+//   });
+//
+// // for (var i = 0; i < price.length; i++)
+// });
 
 
 //
