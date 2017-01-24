@@ -25,7 +25,7 @@ var hiddenFigures = {
 movieTimesFunction = function(billAndTed){
   var times = [];
   times = billAndTed.movieTime;
-  // alert(times[i]);
+
   for (var i = 0; i < billAndTed.movieTime.length; i++){
     alert(times[i]);
     // times[i] = billAndTed.movieTimes[i];
